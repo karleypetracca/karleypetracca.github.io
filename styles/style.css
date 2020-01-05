@@ -1,0 +1,127 @@
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #DEECE7;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px 20px 20px 20px;
+  background-color: #EEEFF0;
+  border: 1px solid grey;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 50px;
+  background-color: white;
+  overflow: hidden;
+  line-height: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+.container{
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.btn{
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+  width: 150px;
+  height: 50px;
+  border: none;
+  display: inline;
+  text-align: center;
+  margin: auto;
+}
+
+.nav{
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+}
+
+.nav li{
+  display: inline;
+  padding: auto;
+  margin: auto;
+}
+
+.nav button:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0;
+  color: #7FAD9E;
+}
+
+h2 {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2;
+  margin-top: 30px;
+  padding: 5px 0;
+  letter-spacing: 1px;
+  color: #7FAD9E;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+img[src="images/kp-portrait.png"] {
+  border-radius: 50%;
+  width: 270px;
+  float: right;
+  align-items: baseline;
+}
+
+.facts {
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: left;
+  line-height: 3;
+  padding: 70px 0;
+  padding-left: 50px;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+p {
+  margin: 0 auto;
+  font-size: 15px;
+  text-align: left;
+  line-height: 2;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+
+ul, ol, li {
+  text-indent: -20px;
+  margin: 5px;
+  font-size: 15px;
+  line-height: 2;
+  padding: 5px;
+  padding-left: 20px;
+  list-style-position: inside;
+  letter-spacing: 1px;
+  background-color: white;
+}
+
+strong {
+  font-weight: bold !important;
+}
