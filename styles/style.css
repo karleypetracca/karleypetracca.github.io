@@ -1,5 +1,5 @@
 html {
-  font-size: 20px;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
@@ -24,10 +24,12 @@ body {
 }
 
 h1 {
-  margin: 20px 0;
+  margin: 20px auto;
   margin-top: 40px;
   color: rgb(66, 66, 66);
-  font-size: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 em {
@@ -38,50 +40,51 @@ em {
 h2 {
   margin: 0;
   margin-top: 40px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: rgb(127, 173, 158);
   min-width: 300px;
 }
 
 p {
   margin: 20px 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+li {
+  margin: 20px 0;
+  font-size: 1.3rem;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 5px;
+  align-items: space-evenly;
   background-color: rgb(160, 160, 160);
   width: 100%;
-  height: 8vh;
+  margin: 0 auto;
 }
 
 button {
-  padding: 5px;
-  width: 130px;
-  border-radius: 4px;
+  padding: 20px 5px;
+  height: 100%;
   border-style: none;
   background-color: rgb(160, 160, 160);
-  margin: 5px 10px;
+  margin: 0 10px;
   text-align: center;
 }
 
 button * {
   text-decoration: none;
-  border-radius: 4px;
   border-style: none;
   color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 30px;
+  padding: 20px 5px;
 }
 
 button:hover {
   background-color: rgb(221, 221, 221);
   border-style: none;
-  padding: 5px;
-
 }
 
 button:hover * {
@@ -103,11 +106,9 @@ button:hover * {
   margin: 30px auto;
   min-width: 300px;
   width: 85%;
-  font-size: 1rem;
   text-align: left;
   line-height: 2;
   padding-left: 50px;
-  letter-spacing: 1px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -147,8 +148,15 @@ button:hover * {
 .endingNote {
   margin-bottom: 50px;
   color: rgb(66, 66, 66);
+  line-height: 1.75rem;
 }
 
 .endingNote a {
   color: inherit;
+}
+
+.endingNote a:hover {
+  background-color: rgba(0, 0, 0, .05);
+  border-radius: 4px;
+  font-size: 1.1em;
 }
