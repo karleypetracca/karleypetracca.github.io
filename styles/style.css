@@ -8,13 +8,14 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   max-width: 900px;
   width: 100%;
+  min-width: 320px;
   margin: 0 auto;
   background-color: rgb(157, 177, 170);
   display: flex;
@@ -26,6 +27,7 @@ body {
 h1 {
   margin: 20px auto;
   margin-top: 40px;
+  padding: 5px;
   color: rgb(66, 66, 66);
   font-size: 2rem;
   text-align: center;
@@ -47,30 +49,29 @@ h2 {
 
 p {
   margin: 20px 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-li {
-  margin: 20px 0;
+ul {
+  margin: 10px 0;
+  margin-left: 1rem;
   font-size: 1.3rem;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: space-evenly;
+  align-items: center;
   background-color: rgb(160, 160, 160);
   width: 100%;
-  margin: 0 auto;
 }
 
 button {
-  padding: 20px 5px;
   height: 100%;
   border-style: none;
   background-color: rgb(160, 160, 160);
-  margin: 0 10px;
   text-align: center;
+  padding: 12px .8rem;
 }
 
 button * {
@@ -78,8 +79,7 @@ button * {
   border-style: none;
   color: white;
   font-weight: bold;
-  font-size: 30px;
-  padding: 20px 5px;
+  font-size: 1.2rem;
 }
 
 button:hover {
@@ -92,9 +92,8 @@ button:hover * {
 }
 
 .wrapper {
-  max-width: 1000px;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,18 +103,20 @@ button:hover * {
 
 .facts {
   margin: 30px auto;
-  min-width: 300px;
-  width: 85%;
+  min-width: 320px;
+  width: 80%;
   text-align: left;
   line-height: 2;
-  padding-left: 50px;
+  padding-left: 1.5rem;
   background-color: rgb(255, 255, 255);
 }
 
 .facts img {
   border-radius: 50%;
-  width: 270px;
+  max-width: 270px;
+  width: 50%;
   float: right;
+  padding: 5px;
 }
 
 .content {
@@ -124,9 +125,9 @@ button:hover * {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 1.5rem;
   line-height: 1.5;
-  width: 85%;
+  width: 100%;
   min-width: 300px;
 }
 
@@ -148,7 +149,8 @@ button:hover * {
 .endingNote {
   margin-bottom: 50px;
   color: rgb(66, 66, 66);
-  line-height: 1.75rem;
+  line-height: 2rem;
+  max-width: 90%;
 }
 
 .endingNote a {
