@@ -15,7 +15,7 @@ html {
 body {
   max-width: 900px;
   width: 100%;
-  min-width: 100vw;
+  min-width: 320px;
   margin: 0 auto;
   background-color: rgb(157, 177, 170);
   display: flex;
@@ -84,6 +84,7 @@ button * {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
+  padding: 12px .8rem;
 }
 
 button:hover {
