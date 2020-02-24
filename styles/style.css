@@ -15,7 +15,7 @@ html {
 body {
   max-width: 900px;
   width: 100%;
-  min-width: 320px;
+  min-width: 100vw;
   margin: 0 auto;
   background-color: rgb(157, 177, 170);
   display: flex;
@@ -64,6 +64,10 @@ ul {
   align-items: center;
   background-color: rgb(160, 160, 160);
   width: 100%;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+
 }
 
 button {
