@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Karley Petracca | Software Developer</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon relational links -->
@@ -16,86 +17,209 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- fontawesome -->
+    <!-- in-text icons -->
+    <link rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://kit.fontawesome.com/50500697d2.js" crossorigin="anonymous"></script>
+    
   </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="navbarStart">
-        <div class="navbarImg">
+  <body class="flex-column">
+
+    <!-- Navbar -->
+    <nav class="nav flex-row-center">
+      <div class="nav-content flex-row-between">
+        <div class="nav-item">
           <img src="images/kp-logo-bold-3.png">
         </div>
-      </div>
-      <div class="navbarEnd">
-        <button>
-          <a href="https://github.com/karleypetracca">
-            <i class="fab fa-github fa-2x"></i>
+        <div class="flex-row-around">
+          <a class="nav-item flex-column"
+          href="https://github.com/karleypetracca">
+            <i class="fab fa-github fa-3x" aria-hidden="true"></i>
           </a>
-        </button>
-        <button>
-          <a href="https://www.linkedin.com/in/karleypetracca/">
-            <i class="fab fa-linkedin fa-2x"></i>
+          <a class="nav-item flex-column"
+          href="https://www.linkedin.com/in/karleypetracca/">
+            <i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
           </a>
-        </button>
-        <button>
-          <a href="mailto:karleypetracca@gmail.com"
+          <a class="nav-item flex-column"
+          href="mailto:karleypetracca@gmail.com"
           title="karleypetracca@gmail.com">
-          <i class="fas fa-envelope-square fa-2x"></i>
-        </a>
-        </button>
+            <i class="fas fa-envelope-square fa-3x" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </nav>
 
-    <div class="heroWrapper">
-      <h1>Hi, I'm <em>Karley Petracca</em> - I'm a <em>Software Developer</em>.</h1>
-
-      <div class="facts">
-        <img class="portrait" src="images/kp-portrait.png" alt="Portrait image">
-        <h2>Quick Facts</h2>
-        <p><b>Background:</b> Strategy / Data</p>
-        <p><b>Location:</b> Atlanta, GA</p>
-        <p><b>Originally from:</b> Boston, MA</p>
-        <p><b>Hobbies:</b> Art, Hiking, Videogames</p>
+    <!-- Hero div -->
+    <section name="top" class="hero">
+      <div class="content flex-column">
+        <div class="flex-row-center text-center flex-wrap">
+          <div class="flex-row-center content-item">
+            <img class="img-circle" src="images/kp-portrait.png" alt="Image of
+            Karley Petracca">
+          </div>
+          <div class="content-item flex-wrap flex-row-center">
+            <h1 class="">Hi, I'm <em>Karley Petracca</em> - I'm a
+              <em>Software Developer</em></h1>
+          </div>
+        </div>
+        <div class="flex-row-center text-center">
+          <h2>I have a passion for <em>polished practicality</em>,<br>
+          and coding is no exception.</h2>
+        </div>
+        <nav>
+          <h2 class="flex-row-center flex-wrap my">
+            [
+            <a href="#portfolio" class="nav-inline">Portfolio,</a>
+            <a href="#about" class="nav-inline">About,</a>
+            <a href="#contact" class="nav-inline">Contact</a>
+            ]
+          </h2>
+        </nav>
+        <a href="#portfolio" class="arrows">
+          <div class="arrow"></div>
+        </a>
       </div>
-    </div>
+    </section>
 
-    <div class="contentWrapper">
-      <section class="content">
-        <h2>What's this all about?</h2>
-        <p>I've had an amazing career journey for over 6 years in business
-        strategy and data in Atlanta. But something I've come to learn about
-        myself recently is that it never felt like the right fit for my
-        skillset and that there was something else out there to explore.</p>
-        <p>So I'm finally taking the plunge and following my passion into
-        software
-        development.</p>
-      </section>
-    </div>
-    <div class="contentWrapper">
-      <section class="content">
-        <h2>Why software development?</h2>
-        <p>When I think back on the years, its easy to see how the signs were there all along pointing to software development:</p>
-        <ul>
-          <li>My teenage days were spent using HTML to build the perfect
-          MySpace page.</li>
-          <li>Digital art has been a hobby since childhood, forcing me to
-          learn about creative design as well as positioning / placement /
-          margins / etc for online display.</li>
-          <li>I was the "oddball" who enjoyed creating complicated formulas in
-          excel and other similar programs.</li>
-          <li>Data analysis was something I gravitated to in my career and
-          greatly enjoyed learning Tableau, Python, R and SQL to stay
-          competitive.</li>
-        </ul>
-      </section>
-    </div>
-    <div class="footerWrapper">
-      <h2 class="endingNote">I have an official portfolio in the works but
-      until its release, <em>please
-      check my <a href="https://github.com/karleypetracca">GitHub</a> for past and current projects</em>.  I am adding new repos
-      every week!</h2>
-    </div>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="full-pg">
+      <div class= "content">
+        <h1 class="content-item text-white">My work:</h1>
+
+        <div class="flex-row-around flex-align-start flex-wrap">
+
+          <div class="project">
+            <h2>HoldMyLiquor</h2>
+            <hr>
+            <h3>Fullstack</h3>
+            <p>
+              If you have ever wanted to know the recipe for making a great drink
+              (alcoholic or non-alcoholic), this is your site! You can easily
+              search for a drink by name, or search for new and exciting beverages using
+              the explore tab. Signup and login to save your highest rated drinks as favorites.
+            </p>
+            <div class="img-tools">
+              <i class="fab fa-node-js" title="Node.js"></i>
+              <i class="devicon-express-original-wordmark" title="Express.js"></i>
+              <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-cog" title="3rd Party API"></i>
+            </div>
+            <button><a href="https://holdmyliquor.karleypetracca.com">Demo</a></button>
+            <button><a href="https://github.com/allybrannon/HoldMyLiquor">GitHub Repo</a></button>
+            <div class="img-project">
+              <img src="images/HoldMyLiquor.png">
+            </div>
+          </div>
+
+          <div class="project">
+            <h2>GameScope</h2>
+            <hr>
+            <h3>Frontend</h3>
+            <p>
+              Site that gives gamers the ability to  see what games will be released via
+              user-specified filters. Games tiles can be clicked on to view more
+              information about the game along with news articles, if available.
+            </p>
+            <p>         
+              <b>Note:</b> requires CORS Unblocker extension or other proxy to use
+            </p>
+            <div class="img-tools">
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="devicon-jquery-plain" title="jQuery"></i>
+              <i class="fas fa-cog" title="3rd Party APIs [2]"></i>
+
+            </div>
+            <button><a href="https://gamescope.karleypetracca.com">Demo</a></button>
+            <button><a href="https://github.com/karleypetracca/GameScope">GitHub Repo</a></button>
+            <div class="img-project">
+              <img src="images/GameScope.png">
+            </div>
+          </div>
+
+          <div class="project">
+            <h2>Py Cat Why!?!</h2>
+            <hr>
+            <h3>Pygame</h3>
+            <p>
+              Clicking game where the cat hates you and fruit.  The cat is
+              racing around the backyard and gets angrier at each fruit it runs
+              into. Goal is to get the cat into the cat carrier! Features
+              click-movement, an anger meter and moving objects, as well as 10
+              levels with increasing difficulty.
+            </p>
+            <div class="img-tools">
+              <i class="fab fa-python" title="Python"></i>
+          
+            </div>
+            <button><a href="https://github.com/JoshuaBevers/PyCatWhy">GitHub Repo</a></button>
+            <div class="img-project">
+              <img src="images/PyCatWhy.png">
+            </div>
+          </div>
+
+        </div>
+        <h2 class="content-item text-center">Check out my <button><a href="https://github.com/karleypetracca">GitHub</a></button> for
+        additional projects</em>
+        </h2>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="full-pg">
+      <div class="content">
+        <h1 class="content-item text-white">About:</h1>
+      </div>
+
+      <div class="content">
+
+        <div class="content-item">
+          <p class="py">
+            I had an amazing career journey for over 6 years in business
+            strategy and data in Atlanta. But over those years I came to
+            understand that it didn't feel like the right fit for me
+            and that there was more to explore. So I took
+            the plunge and followed my passion into software development.
+          </p>
+        </div>
+
+        <div class="content-item">
+          <p class="py">
+            Everyday I challenge myself to learn something new and be a better
+            version of myself through curiousity and personal honesty. With
+            code, there is always something new to learn and something to be
+            humbled about - two things that drive my daily challenge. This is
+            why I love what do and why every project is exciting.
+          </p>
+        </div>
+        
+        <div class="content-item">
+          <p class="py">
+            Living in Atlanta, I love to enjoy the amazing number of hiking
+            trails the state has to offer and especially those in the
+            Appalachians. When I'm not coding or hiking in my free time, I like to
+            grab a bite with friends, practice digital art when the creative bug strikes or play a
+            videogame to relax.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content">
+      <div class="content-item flex-row-center flex-wrap text-white">
+        <h1>Contact me:</h1>
+        <a class="nav-inline flex-row-around" href="mailto:karleypetracca@gmail.com" title="karleypetracca@gmail.com">
+          <i class="fas fa-envelope-square fa-3x my mx" aria-hidden="true"></i>
+          <h3>karleypetracca@gmail.com</h3>
+        </a>
+      </div>
+    </section>
     
     <script src="scripts/script.js"></script>
 
