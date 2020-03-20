@@ -17,8 +17,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- fontawesome -->
+    <!-- in-text icons -->
+    <link rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://kit.fontawesome.com/50500697d2.js" crossorigin="anonymous"></script>
+    
   </head>
 
   <body class="flex-column">
@@ -48,84 +51,152 @@
     </nav>
 
     <!-- Hero div -->
-    <div class="content hero flex-row-center text-center">
-      <div class="content-item flex-row-center">
-        <img class="img-circle" src="images/kp-portrait.png" alt="Image of
-        Karley Petracca">
+      <div name="top" class="hero">
+        <div class="content flex-column">
+          <div class="flex-row-center text-center flex-wrap">
+            <div class="flex-row-center content-item">
+              <img class="img-circle" src="images/kp-portrait.png" alt="Image of
+              Karley Petracca">
+            </div>
+            <div class="content-item flex-wrap flex-row-center">
+              <h1 class="">Hi, I'm <em>Karley Petracca</em> - I'm a
+                <em>Software Developer</em></h1>
+            </div>
+          </div>
+          <div class="flex-row-center text-center">
+            <h2>I have a passion for <em>polished practicality</em>,<br>
+            and coding is no exception.</h2>
+          </div>
+          <div class="flex-row-center flex-wrap">
+            <a href="#portfolio"><h2 class="nav-item">[ Portfolio ]</h2></a>
+            <a href="#about"><h2 class="nav-item">[ About ]</h2></a>
+            <a href="#contact"><h2 class="nav-item">[ Contact ]</h2></a>
+          </div>
+          
+        </div>
       </div>
-      <div class="content-item flex-column">
-        <h1 class="content-item">Hi, I'm <em>Karley Petracca</em> - I'm a
-          <em>Software Developer</em></h1>
+
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="full-pg">
+      <div class= "content">
+        <h1 class="content-item text-white">My work:</h1>
+
+        <div class="portfolio flex-row-around flex-align-start flex-wrap">
+
+          <div class="project">
+            <h2>HoldMyLiquor</h2>
+            <hr>
+            <h3>Fullstack</h3>
+            <p>
+              If you have ever wanted to know the recipe for making a great drink
+              (alcoholic or non-alcoholic), this is your site! You can easily
+              search for a drink by name, or search for new and exciting beverages using
+              the explore tab. Signup and login to save your highest rated drinks as favorites.
+            </p>
+            <div class="img-tools">
+              <i class="fab fa-node-js" title="Node.js"></i>
+              <i class="devicon-express-original-wordmark" title="Express.js"></i>
+              <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="fas fa-cog" title="3rd Party API"></i>
+            </div>
+            <a href="https://holdmyliquor.karleypetracca.com"><button>Demo</button></a>
+            <a href="https://github.com/allybrannon/HoldMyLiquor"><button>GitHub Repo</button></a>
+            <div class="img-project">
+              <img src="images/HoldMyLiquor.png">
+            </div>
+          </div>
+
+          <div class="project">
+            <h2>GameScope</h2>
+            <hr>
+            <h3>Frontend</h3>
+            <p>
+              Gives gamers the chance to see what games will be released via
+              user-specified filters. Games tiles can be clicked on to view more
+              information about the game along with news articles, if available.
+            </p>
+            <p>         
+              <b>Note:</b> requires CORS Unblocker extension or other proxy to use
+            </p>
+            <div class="img-tools">
+              <i class="fab fa-js" title="JavaScript"></i>
+              <i class="fab fa-html5" title="HTML5"></i>
+              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <i class="devicon-jquery-plain" title="jQuery"></i>
+              <i class="fas fa-cog" title="3rd Party APIs [2]"></i>
+
+            </div>
+            <a href="https://gamescope.karleypetracca.com"><button>Demo</button></a>
+            <a href="https://github.com/karleypetracca/GameScope"><button>GitHub Repo</button></a>
+            <div class="img-project">
+              <img src="images/GameScope.png">
+            </div>
+          </div>
+
+          <div class="project">
+            <h2>Py Cat Why!?!</h2>
+            <hr>
+            <h3>Pygame</h3>
+            <p>
+              Clicking game where the cat hates you and fruit.  The cat is racing
+              around the backyard and gets angrier at each fruit it runs into. Goal
+              is to get the cat into the cat carrier! Features click-movement, an anger meter and moving objects, as well as 10
+              levels with increasing difficulty.
+            </p>
+            <div class="img-tools">
+              <i class="fab fa-python" title="Python"></i>
+          
+            </div>
+            <a href="https://github.com/JoshuaBevers/PyCatWhy"><button>GitHub Repo</button></a>
+            <div class="img-project">
+              <img src="images/PyCatWhy.png">
+            </div>
+          </div>
+
+        </div>
+        <h2 class="content-item text-center">Check out my <a href="https://github.com/karleypetracca"><button>GitHub</button></a> for
+        additional projects</em>
+        </h2>
       </div>
     </div>
-    
-    <!-- Portfolio div -->
-    <!-- <div class="content">
-      <h2 class="content-item text-center">I have an official portfolio in the works but
-      until its release, <em>please check my <a class="text-a"
-      href="https://github.com/karleypetracca">GitHub</a> for past and current
-      projects</em>. I am adding new repos every week!
-      </h2>
-    </div> -->
 
-    <!-- NEW Portfolio div -->
-    <div class="content">
-      <h1 class="content-item">My work:</h1>
+    <!-- About -->
+    <div id="about" class="full-pg">
+      <div>
+        <div class="content">
+          <h1 class="content-item text-white">About:</h1>
+        </div>
 
-      <div class="portfolio flex-row-around">
-        <div class="project"></div>
-      </div>
-      <h2 class="content-item text-center">Check out my <a class="text-a" href="https://github.com/karleypetracca"><button>GitHub</button></a> for
-      additional projects</em>
-      </h2>
-    </div>
+        <div class="content white-bg">
+          <div class="content-item">
+            <h2>A little about me:</h2>
+            <p><b>Background:</b> Strategy / Data</p>
+            <p><b>Location:</b> Atlanta, GA</p>
+            <p><b>Originally from:</b> Boston, MA</p>
+            <p><b>Hobbies:</b> Art, Hiking, Videogames</p>
+          </div>
+        
+        </div>
+        <div class="content white-bg">
 
-    <!-- About div -->
-    <div class="content">
-      <h1 class="content-item">About:<h1>
-
-      </div>
-
-    <div class="content white-bg">
-      <div class="content-item">
-        <h2>A little about me:</h2>
-        <p><b>Background:</b> Strategy / Data</p>
-        <p><b>Location:</b> Atlanta, GA</p>
-        <p><b>Originally from:</b> Boston, MA</p>
-        <p><b>Hobbies:</b> Art, Hiking, Videogames</p>
-      </div>
-    
-    </div>
-    <div class="content white-bg">
-
-      <div class="content-item">
-        <h2>What's this all about?</h2>
-        <p>I've had an amazing career journey for over 6 years in business
-        strategy and data in Atlanta. But something I've come to learn about
-        myself recently is that it never felt like the right fit for my skillset
-        and that there was something else out there to explore.</p>
-        <p>So I'm finally taking the plunge and following my passion into
-        software development.</p>
+          <div class="content-item">
+            <p>I had an amazing career journey for over 6 years in business
+            strategy and data in Atlanta. But something I've come to learn about
+            myself is that it never felt like the right fit for my skillset
+            and that there was something else out there to explore. So I took the plunge and followed my passion into
+            software development.</p>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="content white-bg">
-      <div class="content-item">
-        <h2>Why software development?</h2>
-        <p>When I think back on the years, its easy to see how the signs were
-        there all along pointing to software development:</p>
-        <ul>
-          <li>My teenage days were spent using HTML to build the perfect MySpace
-          page.</li>
-          <li>Digital art has been a hobby since childhood, forcing me to learn
-          about creative design as well as positioning / placement / margins /
-          etc for online display.</li>
-          <li>I was the "oddball" who enjoyed creating complicated formulas in
-          excel and other similar programs.</li>
-          <li>Data analysis was something I gravitated to in my career and
-          greatly enjoyed learning Tableau, Python, R and SQL to stay
-          competitive.</li>
-        </ul>
+    <!-- Contact -->
+    <div id="contact" class="full-pg">
+      <div class="content">
+        <h1 class="content-item text-white">Contact me</h1>
       </div>
     </div>
     
