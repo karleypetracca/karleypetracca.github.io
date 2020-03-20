@@ -51,38 +51,44 @@
     </nav>
 
     <!-- Hero div -->
-      <div name="top" class="hero">
-        <div class="content flex-column">
-          <div class="flex-row-center text-center flex-wrap">
-            <div class="flex-row-center content-item">
-              <img class="img-circle" src="images/kp-portrait.png" alt="Image of
-              Karley Petracca">
-            </div>
-            <div class="content-item flex-wrap flex-row-center">
-              <h1 class="">Hi, I'm <em>Karley Petracca</em> - I'm a
-                <em>Software Developer</em></h1>
-            </div>
+    <section name="top" class="hero">
+      <div class="content flex-column">
+        <div class="flex-row-center text-center flex-wrap">
+          <div class="flex-row-center content-item">
+            <img class="img-circle" src="images/kp-portrait.png" alt="Image of
+            Karley Petracca">
           </div>
-          <div class="flex-row-center text-center">
-            <h2>I have a passion for <em>polished practicality</em>,<br>
-            and coding is no exception.</h2>
+          <div class="content-item flex-wrap flex-row-center">
+            <h1 class="">Hi, I'm <em>Karley Petracca</em> - I'm a
+              <em>Software Developer</em></h1>
           </div>
-          <div class="flex-row-center flex-wrap">
-            <a href="#portfolio"><h2 class="nav-item">[ Portfolio ]</h2></a>
-            <a href="#about"><h2 class="nav-item">[ About ]</h2></a>
-            <a href="#contact"><h2 class="nav-item">[ Contact ]</h2></a>
-          </div>
-          
         </div>
+        <div class="flex-row-center text-center">
+          <h2>I have a passion for <em>polished practicality</em>,<br>
+          and coding is no exception.</h2>
+        </div>
+        <nav>
+          <h2 class="flex-row-center flex-wrap my">
+            [
+            <a href="#portfolio" class="nav-inline">Portfolio,</a>
+            <a href="#about" class="nav-inline">About,</a>
+            <a href="#contact" class="nav-inline">Contact</a>
+            ]
+          </h2>
+        </nav>
+        <a href="#portfolio" class="arrows">
+          <div class="arrow"></div>
+        </a>
       </div>
+    </section>
 
 
     <!-- Portfolio -->
-    <div id="portfolio" class="full-pg">
+    <section id="portfolio" class="full-pg">
       <div class= "content">
         <h1 class="content-item text-white">My work:</h1>
 
-        <div class="portfolio flex-row-around flex-align-start flex-wrap">
+        <div class="flex-row-around flex-align-start flex-wrap">
 
           <div class="project">
             <h2>HoldMyLiquor</h2>
@@ -102,8 +108,8 @@
               <i class="fab fa-css3-alt" title="CSS3"></i>
               <i class="fas fa-cog" title="3rd Party API"></i>
             </div>
-            <a href="https://holdmyliquor.karleypetracca.com"><button>Demo</button></a>
-            <a href="https://github.com/allybrannon/HoldMyLiquor"><button>GitHub Repo</button></a>
+            <button><a href="https://holdmyliquor.karleypetracca.com">Demo</a></button>
+            <button><a href="https://github.com/allybrannon/HoldMyLiquor">GitHub Repo</a></button>
             <div class="img-project">
               <img src="images/HoldMyLiquor.png">
             </div>
@@ -114,7 +120,7 @@
             <hr>
             <h3>Frontend</h3>
             <p>
-              Gives gamers the chance to see what games will be released via
+              Site that gives gamers the ability to  see what games will be released via
               user-specified filters. Games tiles can be clicked on to view more
               information about the game along with news articles, if available.
             </p>
@@ -129,8 +135,8 @@
               <i class="fas fa-cog" title="3rd Party APIs [2]"></i>
 
             </div>
-            <a href="https://gamescope.karleypetracca.com"><button>Demo</button></a>
-            <a href="https://github.com/karleypetracca/GameScope"><button>GitHub Repo</button></a>
+            <button><a href="https://gamescope.karleypetracca.com">Demo</a></button>
+            <button><a href="https://github.com/karleypetracca/GameScope">GitHub Repo</a></button>
             <div class="img-project">
               <img src="images/GameScope.png">
             </div>
@@ -141,64 +147,79 @@
             <hr>
             <h3>Pygame</h3>
             <p>
-              Clicking game where the cat hates you and fruit.  The cat is racing
-              around the backyard and gets angrier at each fruit it runs into. Goal
-              is to get the cat into the cat carrier! Features click-movement, an anger meter and moving objects, as well as 10
+              Clicking game where the cat hates you and fruit.  The cat is
+              racing around the backyard and gets angrier at each fruit it runs
+              into. Goal is to get the cat into the cat carrier! Features
+              click-movement, an anger meter and moving objects, as well as 10
               levels with increasing difficulty.
             </p>
             <div class="img-tools">
               <i class="fab fa-python" title="Python"></i>
           
             </div>
-            <a href="https://github.com/JoshuaBevers/PyCatWhy"><button>GitHub Repo</button></a>
+            <button><a href="https://github.com/JoshuaBevers/PyCatWhy">GitHub Repo</a></button>
             <div class="img-project">
               <img src="images/PyCatWhy.png">
             </div>
           </div>
 
         </div>
-        <h2 class="content-item text-center">Check out my <a href="https://github.com/karleypetracca"><button>GitHub</button></a> for
+        <h2 class="content-item text-center">Check out my <button><a href="https://github.com/karleypetracca">GitHub</a></button> for
         additional projects</em>
         </h2>
       </div>
-    </div>
+    </section>
 
     <!-- About -->
-    <div id="about" class="full-pg">
-      <div>
-        <div class="content">
-          <h1 class="content-item text-white">About:</h1>
+    <section id="about" class="full-pg">
+      <div class="content">
+        <h1 class="content-item text-white">About:</h1>
+      </div>
+
+      <div class="content">
+
+        <div class="content-item">
+          <p class="py">
+            I had an amazing career journey for over 6 years in business
+            strategy and data in Atlanta. But over those years I came to
+            understand that it didn't feel like the right fit for me
+            and that there was more to explore. So I took
+            the plunge and followed my passion into software development.
+          </p>
         </div>
 
-        <div class="content white-bg">
-          <div class="content-item">
-            <h2>A little about me:</h2>
-            <p><b>Background:</b> Strategy / Data</p>
-            <p><b>Location:</b> Atlanta, GA</p>
-            <p><b>Originally from:</b> Boston, MA</p>
-            <p><b>Hobbies:</b> Art, Hiking, Videogames</p>
-          </div>
+        <div class="content-item">
+          <p class="py">
+            Everyday I challenge myself to learn something new and be a better
+            version of myself through curiousity and personal honesty. With
+            code, there is always something new to learn and something to be
+            humbled about - two things that drive my daily challenge. This is
+            why I love what do and why every project is exciting.
+          </p>
+        </div>
         
-        </div>
-        <div class="content white-bg">
-
-          <div class="content-item">
-            <p>I had an amazing career journey for over 6 years in business
-            strategy and data in Atlanta. But something I've come to learn about
-            myself is that it never felt like the right fit for my skillset
-            and that there was something else out there to explore. So I took the plunge and followed my passion into
-            software development.</p>
-          </div>
+        <div class="content-item">
+          <p class="py">
+            Living in Atlanta, I love to enjoy the amazing number of hiking
+            trails the state has to offer and especially those in the
+            Appalachians. When I'm not coding or hiking in my free time, I like to
+            grab a bite with friends, practice digital art when the creative bug strikes or play a
+            videogame to relax.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Contact -->
-    <div id="contact" class="full-pg">
-      <div class="content">
-        <h1 class="content-item text-white">Contact me</h1>
+    <section id="contact" class="content">
+      <div class="content-item flex-row-center flex-wrap text-white">
+        <h1>Contact me:</h1>
+        <a class="nav-inline flex-row-around" href="mailto:karleypetracca@gmail.com" title="karleypetracca@gmail.com">
+          <i class="fas fa-envelope-square fa-3x my mx" aria-hidden="true"></i>
+          <h3>karleypetracca@gmail.com</h3>
+        </a>
       </div>
-    </div>
+    </section>
     
     <script src="scripts/script.js"></script>
 

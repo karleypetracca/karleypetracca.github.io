@@ -11,9 +11,10 @@
   
   --border-radius: 4px;
   --lg-container: 1200px;
+
+  --animation-speed: 2s;
+  --animation-delay: 1s;
 }
-
-
 
 html {
   font-size: 16px;
@@ -45,6 +46,7 @@ a {
 a:hover {
   color: var(--darkernav-color);
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 em {
@@ -106,6 +108,27 @@ img {
   background-color: var(--white-color);
 }
 
+/* margin and padding classes */
+.mx {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.my {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.px {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.py {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 /* flex classes */
 .flex-column {
   display: flex;
@@ -117,10 +140,6 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
   flex-basis: 250px;
-}
-
-.flex-grow {
-  flex-grow: 1.5;
 }
 
 .flex-row-around {
@@ -151,6 +170,7 @@ img {
   position: sticky;
   background-color: var(--darknav-color);
   top: 0;
+  z-index: 9999
 }
 
 .nav-content {
@@ -166,6 +186,20 @@ img {
 
 .nav-item * {
   height: 100%;
+}
+
+.nav-inline {
+  color: var(--white-color);
+  margin-left: 10px;
+}
+
+.nav-inline:last-child {
+  margin-right: 10px;
+}
+
+.nav-inline:hover {
+  color: var(--dark-color);
+  transition-duration: 0.3s;
 }
 
 .content {
@@ -190,8 +224,9 @@ img {
 
 .project {
   min-width: 300px;
-  width: 20rem;
-  margin: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
 }
 
 .img-sm {
@@ -214,7 +249,7 @@ img {
 
 .img-project {
   border-radius: var(--border-radius);
-  max-width: 300px;
+  min-width: 300px;
   width: 100%;
 }
 
@@ -228,3 +263,67 @@ img {
 }
 
 /* animated arrow */
+
+.arrows {
+  min-height: 50px;
+  width: 50px;
+}
+
+.arrow {
+  opacity: .1;
+  height: 100%;
+  width: 100%;
+  transform-origin: 0% 100%;
+  transform: translate3d(0%, 0%, 0);
+  transform-origin: 0% 100%;
+  animation: arrow-movement var(--animation-speed) ease-in-out infinite;
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+}
+
+.arrow:hover {
+  animation-play-state: running;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -o-animation-play-state: running;
+ }
+
+.arrow:before, .arrow:after {
+  background: var(--white-color);
+  content: "";
+  display: block;
+  height: 3px; 
+  position: absolute;
+  left: 0;
+  width: 30px;
+  top: 40%;
+}
+
+.arrow:before {
+  transform: rotate(45deg) translateX(-23%);
+  transform-origin: top left;
+}
+
+.arrow:after {
+  transform: rotate(-45deg) translateX(23%);
+  transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+  0% { 
+    opacity: .1;
+    top: 0%;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% { 
+    opacity: .1;
+    top: 100%;
+  }
+}
+
+/* media queries */
+
