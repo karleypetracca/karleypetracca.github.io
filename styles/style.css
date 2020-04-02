@@ -1,343 +1,357 @@
 /* color variables */
 :root {
-  --gradient-light: rgb(171, 184, 179);
-  --gradient-dark: rgb(83, 83, 83);
-  --white-color: rgb(238, 240, 239);
-  --greygreen-color: rgb(157, 177, 170);
-  --dark-color: rgb(66, 66, 66);
-  --nav-color: rgb(135, 177, 154);
-  --darknav-color: rgb(86, 167, 122);
-  --darkernav-color: rgb(57, 121, 86);
-  
-  --border-radius: 4px;
-  --lg-container: 1200px;
+	--gradient-light: rgb(171, 184, 179);
+	--gradient-dark: rgb(83, 83, 83);
+	--white-color: rgb(238, 240, 239);
+	--greygreen-color: rgb(157, 177, 170);
+	--dark-color: rgb(66, 66, 66);
+	--nav-color: rgb(135, 177, 154);
+	--darknav-color: rgb(86, 167, 122);
+	--darkernav-color: rgb(57, 121, 86);
 
-  --animation-speed: 2s;
-  --animation-delay: 1s;
+	--border-radius: 4px;
+	--lg-container: 1200px;
+
+	--animation-speed: 2s;
+	--animation-delay: 1s;
 }
 
 html {
-  font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
-  color: var(--dark-color);
-  overflow-x: hidden;
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	color: var(--dark-color);
+	overflow-x: hidden;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-  line-height: 1.9rem;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	line-height: 1.9rem;
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background: radial-gradient(var(--gradient-light), var(--gradient-dark));
-  overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background: radial-gradient(var(--gradient-light), var(--gradient-dark));
+	overflow-x: hidden;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 a:hover {
-  color: var(--darkernav-color);
-  transition-duration: 0.3s;
-  cursor: pointer;
+	color: var(--darkernav-color);
+	transition-duration: 0.3s;
+	cursor: pointer;
 }
 
 em {
-  color: var(--white-color);
-  font-style: normal;
+	color: var(--white-color);
+	font-style: normal;
 }
 
 hr {
-  color: inherit;
-  background-color: transparent;
+	color: inherit;
+	background-color: transparent;
 }
 
-ul, ol {
-  margin-left: 30px;
+ul,
+ol {
+	margin-left: 30px;
 }
 
 button {
-  background-color: var(--darknav-color);
-  margin: 5px 0;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-style: none;
-  border-radius: var(--border-radius);
-  font-size: inherit;
-  color: var(--white-color);
+	background-color: var(--darknav-color);
+	margin: 5px 0;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-style: none;
+	border-radius: var(--border-radius);
+	font-size: inherit;
+	color: var(--white-color);
 }
 
-button:hover, button *:hover {
-  background-color: var(--darkernav-color);
-  color: var(--white-color);
-  cursor: pointer;
-  transition-duration: 0.3s;
+button:hover,
+button *:hover {
+	background-color: var(--darkernav-color);
+	color: var(--white-color);
+	cursor: pointer;
+	transition-duration: 0.3s;
 }
 
 img {
-  height: auto;
-  max-width: 100%;
+	height: auto;
+	max-width: 100%;
 }
 
 /* generic text classes */
 .text-white {
-  color: var(--white-color);
+	color: var(--white-color);
 }
 
 .text-green {
-  color: var(--darknav-color);
+	color: var(--darknav-color);
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 
 .white-bg {
-  background-color: var(--white-color);
-  margin: 0 -200vw;
-  padding: 10px 100vw;
+	background-color: var(--white-color);
+	margin: 0 -200vw;
+	padding: 10px 100vw;
 }
 
 /* margin and padding classes */
 .mx {
-  margin-left: 5px;
-  margin-right: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 .my {
-  margin-top: 10px;
-  margin-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .px {
-  padding-left: 5px;
-  padding-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .py {
-  padding-top: 10px;
-  padding-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* flex classes */
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
-  flex-basis: 250px;
+	flex-wrap: wrap;
+	flex-basis: 250px;
 }
 
 .flex-row-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .flex-row-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .flex-align-start {
-  align-items: start;
+	align-items: start;
 }
 
 .flex-row-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* wrapper classes */
 .nav {
-  width: 100%;
-  position: sticky;
-  background-color: var(--darknav-color);
-  top: 0;
-  z-index: 9999
+	width: 100%;
+	position: sticky;
+	background-color: var(--darknav-color);
+	top: 0;
+	z-index: 9999;
 }
 
 .nav-content {
-  max-width: var(--lg-container);
-  width: 100%;
+	max-width: var(--lg-container);
+	width: 100%;
 }
 
 .nav-item {
-  margin: 5px;
-  height: 50px;
-  color: var(--white-color);
+	margin: 5px;
+	height: 50px;
+	color: var(--white-color);
 }
 
 .nav-item * {
-  height: 100%;
+	height: 100%;
 }
 
 .nav-inline {
-  color: var(--white-color);
-  margin-left: 10px;
+	color: var(--white-color);
+	margin-left: 10px;
 }
 
 .nav-inline:last-child {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .nav-inline:hover {
-  color: var(--dark-color);
-  transition-duration: 0.3s;
+	color: var(--dark-color);
+	transition-duration: 0.3s;
 }
 
 .content {
-  max-width: var(--lg-container);
-  width: 100vw;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+	max-width: var(--lg-container);
+	width: 100vw;
+	height: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .content-item {
-  min-width: 250px;
-  margin: 10px;
+	min-width: 250px;
+	margin: 10px;
 }
 
 .content-hero {
-  max-width: var(--lg-container);
-  width: 100%;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+	max-width: var(--lg-container);
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .hero {
-  max-width: 700px;
-  margin-top: 30px;
-  margin-bottom: 0px;
-  height: calc(100vh - 60px);
+	max-width: 700px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	height: calc(100vh - 60px);
 }
 
 .project {
-  min-width: 300px;
-  width: 100%;
-  max-width: 400px;
-  padding: 10px;
+	min-width: 300px;
+	width: 100%;
+	max-width: 400px;
+	padding: 10px;
 }
 
 .img-sm {
-  max-width: 75px;
-  width: 50%;
-  padding: 5px;
+	max-width: 75px;
+	width: 50%;
+	padding: 5px;
 }
 
 .img-circle {
-  border-radius: 50%;
-  max-width: 200px;
-  min-width: 100px;
-  width: 100%;
-  padding: 5px;
+	border-radius: 50%;
+	max-width: 200px;
+	min-width: 100px;
+	width: 100%;
+	padding: 5px;
 }
 
 .img-tools {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .img-project {
-  border-radius: var(--border-radius);
-  min-width: 300px;
-  width: 100%;
+	border-radius: var(--border-radius);
+	min-width: 300px;
+	width: 100%;
 }
 
 .img-project * {
-  border-radius: var(--border-radius);
+	border-radius: var(--border-radius);
 }
 
 .full-pg {
-  min-height: 100vh;
-  padding-top: 60px;
+	min-height: 100vh;
+	padding-top: 60px;
 }
 
 .half-pg {
-  min-height: 50vh;
-  padding-top: 60px;
+	min-height: 50vh;
+	padding-top: 60px;
 }
 
 /* animated arrow */
 
 .arrows {
-  min-height: 50px;
-  width: 50px;
+	min-height: 50px;
+	width: 50px;
 }
 
 .arrow {
-  opacity: .1;
-  height: 100%;
-  width: 100%;
-  transform-origin: 0% 100%;
-  transform: translate3d(0%, 0%, 0);
-  transform-origin: 0% 100%;
-  animation: arrow-movement var(--animation-speed) ease-in-out infinite;
-  animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
+	opacity: 0.1;
+	height: 100%;
+	width: 100%;
+	transform-origin: 0% 100%;
+	transform: translate3d(0%, 0%, 0);
+	transform-origin: 0% 100%;
+	animation: arrow-movement var(--animation-speed) ease-in-out infinite;
+	animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+	-moz-animation-play-state: paused;
+	-o-animation-play-state: paused;
 }
 
 .arrow:hover {
-  animation-play-state: running;
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  -o-animation-play-state: running;
+	animation-play-state: running;
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	-o-animation-play-state: running;
 }
 
-.arrow:before, .arrow:after {
-  background: var(--white-color);
-  content: "";
-  display: block;
-  height: 3px; 
-  position: absolute;
-  left: 0;
-  width: 30px;
-  top: 40%;
+.arrow:before,
+.arrow:after {
+	background: var(--white-color);
+	content: "";
+	display: block;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	width: 30px;
+	top: 40%;
 }
 
 .arrow:before {
-  transform: rotate(45deg) translateX(-23%);
-  transform-origin: top left;
+	transform: rotate(45deg) translateX(-23%);
+	transform-origin: top left;
 }
 
 .arrow:after {
-  transform: rotate(-45deg) translateX(23%);
-  transform-origin: top right;
+	transform: rotate(-45deg) translateX(23%);
+	transform-origin: top right;
 }
 
 @keyframes arrow-movement {
-  0% { 
-    opacity: .1;
-    top: 0%;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% { 
-    opacity: .1;
-    top: 100%;
-  }
+	0% {
+		opacity: 0.1;
+		top: 0%;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.1;
+		top: 100%;
+	}
+}
+
+/* media queries */
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+	.no-mobile {
+		display: none;
+	}
 }
